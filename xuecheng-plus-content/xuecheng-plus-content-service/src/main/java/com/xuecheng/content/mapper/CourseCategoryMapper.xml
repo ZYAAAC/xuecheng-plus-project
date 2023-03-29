@@ -18,4 +18,35 @@
         id, name, label, parentid, is_show, orderby, is_leaf
     </sql>
 
+    <resultMap id="BaseResultMapt" type="com.xuecheng.content.model.dto.CourseCategoryTreeDto">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="label" property="label" />
+        <result column="parentid" property="parentid" />
+        <result column="is_show" property="isShow" />
+        <result column="orderby" property="orderby" />
+        <result column="is_leaf" property="isLeaf" />
+    </resultMap>
+    <resultMap id="CourseCategoryMap"
+               type="com.xuecheng.content.model.dto.CourseCategoryTreeDto" extends="BaseResultMapt">
+        <collection
+                property="childrenTreeNodes"
+                ofType="com.xuecheng.content.model.dto.CourseCategoryTreeDto"
+                select="com.xuecheng.content.mapper.CourseCategoryMapper.selectTreeNodess"
+                column="id"
+                >
+        </collection>
+    </resultMap>
+
+    <select id="selectTreeNodes"
+            resultMap="CourseCategoryMap"
+    >
+        SELECT * FROM course_category o WHERE o.parentid = #{id} ORDER BY o.orderby
+    </select>
+
+    <select id="selectTreeNodess"
+            resultType="com.xuecheng.content.model.dto.CourseCategoryTreeDto"
+    >
+        SELECT * FROM course_category o WHERE o.parentid = #{id} ORDER BY o.orderby
+    </select>
 </mapper>
