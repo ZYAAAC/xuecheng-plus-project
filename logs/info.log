@@ -1,766 +1,240 @@
-2023-03-29 22:00:02,530 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:02,530 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:02,549 DEBUG [http-nio-63040-exec-10][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:02,549 DEBUG [http-nio-63040-exec-10][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:02,606 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=, publishStatus=null)]
-2023-03-29 22:00:02,606 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=, publishStatus=null)]
-2023-03-29 22:00:02,632 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:02,632 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:02,632 DEBUG [http-nio-63040-exec-10][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39388163] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:02,632 DEBUG [http-nio-63040-exec-10][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39388163] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:02,696 DEBUG [http-nio-63040-exec-10][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:02,696 DEBUG [http-nio-63040-exec-10][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:02,697 DEBUG [http-nio-63040-exec-10][Logger.java:49] - JDBC Connection [HikariProxyConnection@1808099784 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:02,697 DEBUG [http-nio-63040-exec-10][Logger.java:49] - JDBC Connection [HikariProxyConnection@1808099784 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:02,698 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base
-2023-03-29 22:00:02,698 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base
-2023-03-29 22:00:02,698 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==> Parameters: 
-2023-03-29 22:00:02,698 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==> Parameters: 
-2023-03-29 22:00:02,806 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:02,806 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:02,815 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base LIMIT ?
-2023-03-29 22:00:02,815 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base LIMIT ?
-2023-03-29 22:00:02,815 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==> Parameters: 10(Long)
-2023-03-29 22:00:02,815 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==> Parameters: 10(Long)
-2023-03-29 22:00:02,824 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <==      Total: 10
-2023-03-29 22:00:02,824 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <==      Total: 10
-2023-03-29 22:00:02,825 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39388163]
-2023-03-29 22:00:02,825 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39388163]
-2023-03-29 22:00:02,828 DEBUG [http-nio-63040-exec-10][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:02,828 DEBUG [http-nio-63040-exec-10][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:02,829 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=1, companyId=1232141425, companyName=, name=JAVA8/9/10新特性讲解, users=j (truncated)...]
-2023-03-29 22:00:02,829 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=1, companyId=1232141425, companyName=, name=JAVA8/9/10新特性讲解, users=j (truncated)...]
-2023-03-29 22:00:02,833 DEBUG [http-nio-63040-exec-10][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:02,833 DEBUG [http-nio-63040-exec-10][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:07,686 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:07,686 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:07,687 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:07,687 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:07,688 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=N, publishStatus=null)]
-2023-03-29 22:00:07,688 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=N, publishStatus=null)]
-2023-03-29 22:00:07,692 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:07,692 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:07,693 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c9dc1e6] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:07,693 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c9dc1e6] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:07,708 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:07,708 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:07,711 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@1255938638 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:07,711 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@1255938638 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:07,712 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base WHERE (name LIKE ?)
-2023-03-29 22:00:07,712 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base WHERE (name LIKE ?)
-2023-03-29 22:00:07,712 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: %N%(String)
-2023-03-29 22:00:07,712 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: %N%(String)
-2023-03-29 22:00:08,408 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:08,408 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:08,410 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE (name LIKE ?) LIMIT ?
-2023-03-29 22:00:08,410 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE (name LIKE ?) LIMIT ?
-2023-03-29 22:00:08,411 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: %N%(String), 10(Long)
-2023-03-29 22:00:08,411 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: %N%(String), 10(Long)
-2023-03-29 22:00:08,417 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 10
-2023-03-29 22:00:08,417 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 10
-2023-03-29 22:00:08,418 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c9dc1e6]
-2023-03-29 22:00:08,418 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c9dc1e6]
-2023-03-29 22:00:08,418 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:08,418 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:08,419 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=24, companyId=1232141425, companyName=null, name=人工智能+python, users= (truncated)...]
-2023-03-29 22:00:08,419 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=24, companyId=1232141425, companyName=null, name=人工智能+python, users= (truncated)...]
-2023-03-29 22:00:08,426 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:08,426 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:09,177 DEBUG [http-nio-63040-exec-4][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:09,177 DEBUG [http-nio-63040-exec-4][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:09,178 DEBUG [http-nio-63040-exec-4][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:09,178 DEBUG [http-nio-63040-exec-4][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:09,179 DEBUG [http-nio-63040-exec-4][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=Nacos, publishStatus=null)]
-2023-03-29 22:00:09,179 DEBUG [http-nio-63040-exec-4][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=Nacos, publishStatus=null)]
-2023-03-29 22:00:09,180 DEBUG [http-nio-63040-exec-4][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:09,180 DEBUG [http-nio-63040-exec-4][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:09,180 DEBUG [http-nio-63040-exec-4][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35ae7251] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:09,180 DEBUG [http-nio-63040-exec-4][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35ae7251] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:09,187 DEBUG [http-nio-63040-exec-4][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:09,187 DEBUG [http-nio-63040-exec-4][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:09,188 DEBUG [http-nio-63040-exec-4][Logger.java:49] - JDBC Connection [HikariProxyConnection@2090635225 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:09,188 DEBUG [http-nio-63040-exec-4][Logger.java:49] - JDBC Connection [HikariProxyConnection@2090635225 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:09,189 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base WHERE (name LIKE ?)
-2023-03-29 22:00:09,189 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base WHERE (name LIKE ?)
-2023-03-29 22:00:09,190 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==> Parameters: %Nacos%(String)
-2023-03-29 22:00:09,190 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==> Parameters: %Nacos%(String)
-2023-03-29 22:00:09,191 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:09,191 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:09,192 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE (name LIKE ?) LIMIT ?
-2023-03-29 22:00:09,192 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE (name LIKE ?) LIMIT ?
-2023-03-29 22:00:09,193 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==> Parameters: %Nacos%(String), 10(Long)
-2023-03-29 22:00:09,193 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - ==> Parameters: %Nacos%(String), 10(Long)
-2023-03-29 22:00:09,195 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:09,195 DEBUG [http-nio-63040-exec-4][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:09,195 DEBUG [http-nio-63040-exec-4][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35ae7251]
-2023-03-29 22:00:09,195 DEBUG [http-nio-63040-exec-4][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35ae7251]
-2023-03-29 22:00:09,196 DEBUG [http-nio-63040-exec-4][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:09,196 DEBUG [http-nio-63040-exec-4][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:09,196 DEBUG [http-nio-63040-exec-4][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=117, companyId=1232141425, companyName=null, name=Nacos微服务开发实战, user (truncated)...]
-2023-03-29 22:00:09,196 DEBUG [http-nio-63040-exec-4][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=117, companyId=1232141425, companyName=null, name=Nacos微服务开发实战, user (truncated)...]
-2023-03-29 22:00:09,197 DEBUG [http-nio-63040-exec-4][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:09,197 DEBUG [http-nio-63040-exec-4][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:14,646 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - GET "/content/course-category/tree-nodes", parameters={}
-2023-03-29 22:00:14,646 DEBUG [http-nio-63040-exec-2][LogFormatUtils.java:91] - GET "/content/course/117", parameters={}
-2023-03-29 22:00:14,646 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - GET "/content/course-category/tree-nodes", parameters={}
-2023-03-29 22:00:14,646 DEBUG [http-nio-63040-exec-2][LogFormatUtils.java:91] - GET "/content/course/117", parameters={}
-2023-03-29 22:00:14,647 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseCategoryController#queryTreeNodes()
-2023-03-29 22:00:14,647 DEBUG [http-nio-63040-exec-2][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#getCourseBaseById(Long)
-2023-03-29 22:00:14,647 DEBUG [http-nio-63040-exec-2][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#getCourseBaseById(Long)
-2023-03-29 22:00:14,647 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseCategoryController#queryTreeNodes()
-2023-03-29 22:00:14,648 DEBUG [http-nio-63040-exec-3][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,648 DEBUG [http-nio-63040-exec-3][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@465c41c0] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,649 DEBUG [http-nio-63040-exec-3][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,648 DEBUG [http-nio-63040-exec-3][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,648 DEBUG [http-nio-63040-exec-3][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@465c41c0] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,649 DEBUG [http-nio-63040-exec-3][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,649 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,651 DEBUG [http-nio-63040-exec-3][Logger.java:49] - JDBC Connection [HikariProxyConnection@622908021 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:14,649 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,651 DEBUG [http-nio-63040-exec-3][Logger.java:49] - JDBC Connection [HikariProxyConnection@622908021 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:14,651 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,651 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,651 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57edce52] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,651 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57edce52] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,652 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,652 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ==> Parameters: 1(String)
-2023-03-29 22:00:14,652 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,652 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ==> Parameters: 1(String)
-2023-03-29 22:00:14,654 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@910821161 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,654 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@910821161 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,655 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:14,655 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:14,656 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:14,656 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:14,780 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,780 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,780 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-1(String)
-2023-03-29 22:00:14,780 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-1(String)
-2023-03-29 22:00:14,794 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:14,794 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:14,795 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,795 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,796 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-2(String)
-2023-03-29 22:00:14,796 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-2(String)
-2023-03-29 22:00:14,808 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:14,808 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:14,810 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,810 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,811 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-3(String)
-2023-03-29 22:00:14,811 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-3(String)
-2023-03-29 22:00:14,824 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:14,824 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:14,825 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,825 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,825 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-4(String)
-2023-03-29 22:00:14,825 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-4(String)
-2023-03-29 22:00:14,839 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:14,839 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:14,840 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,840 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,840 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-5(String)
-2023-03-29 22:00:14,840 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-5(String)
-2023-03-29 22:00:14,856 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 7
-2023-03-29 22:00:14,858 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,858 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,858 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57edce52]
-2023-03-29 22:00:14,859 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-6(String)
-2023-03-29 22:00:14,859 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,856 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 7
-2023-03-29 22:00:14,858 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,858 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,858 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57edce52]
-2023-03-29 22:00:14,859 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-6(String)
-2023-03-29 22:00:14,859 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,860 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf3ecb2] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,860 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf3ecb2] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,861 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,861 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,861 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@845688097 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,861 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@845688097 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,862 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:14,862 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:14,862 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:14,862 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:14,863 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,863 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,863 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:14,863 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:14,864 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-7(String)
-2023-03-29 22:00:14,864 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-7(String)
-2023-03-29 22:00:14,867 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 19
-2023-03-29 22:00:14,867 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 19
-2023-03-29 22:00:14,868 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,868 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,868 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-8(String)
-2023-03-29 22:00:14,868 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-8(String)
-2023-03-29 22:00:14,893 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:14,893 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:14,894 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,894 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,895 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-9(String)
-2023-03-29 22:00:14,895 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-9(String)
-2023-03-29 22:00:14,909 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,909 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,909 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 11
-2023-03-29 22:00:14,909 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 11
-2023-03-29 22:00:14,909 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf3ecb2]
-2023-03-29 22:00:14,909 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf3ecb2]
-2023-03-29 22:00:14,910 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,910 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,910 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-10(String)
-2023-03-29 22:00:14,910 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-10(String)
-2023-03-29 22:00:14,912 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 5
-2023-03-29 22:00:14,912 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 5
-2023-03-29 22:00:14,913 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,913 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,914 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-11(String)
-2023-03-29 22:00:14,914 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-11(String)
-2023-03-29 22:00:14,915 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:14,915 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:14,917 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,917 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,917 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-12(String)
-2023-03-29 22:00:14,917 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-12(String)
-2023-03-29 22:00:14,920 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:14,920 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:14,921 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,921 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,923 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-13(String)
-2023-03-29 22:00:14,923 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-13(String)
-2023-03-29 22:00:14,924 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,924 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,925 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19c6d011] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,925 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19c6d011] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@857333799 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@857333799 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:14,926 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:14,927 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 1-3-2(String)
-2023-03-29 22:00:14,927 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 1-3-2(String)
-2023-03-29 22:00:14,927 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,927 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,928 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-14(String)
-2023-03-29 22:00:14,928 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-14(String)
-2023-03-29 22:00:14,929 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,929 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,929 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19c6d011]
-2023-03-29 22:00:14,929 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19c6d011]
-2023-03-29 22:00:14,929 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,929 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26076324] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-2][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26076324] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-2][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@166623661 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,930 DEBUG [http-nio-63040-exec-2][Logger.java:49] - JDBC Connection [HikariProxyConnection@166623661 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:14,931 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:14,931 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-15(String)
-2023-03-29 22:00:14,931 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:14,931 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - ====> Parameters: 1-15(String)
-2023-03-29 22:00:14,931 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 1-3(String)
-2023-03-29 22:00:14,931 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - ==> Parameters: 1-3(String)
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-2][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 1
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <====      Total: 1
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26076324]
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <==      Total: 15
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-2][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26076324]
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-3][BaseJdbcLogger.java:137] - <==      Total: 15
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-3][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@465c41c0]
-2023-03-29 22:00:14,933 DEBUG [http-nio-63040-exec-3][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@465c41c0]
-2023-03-29 22:00:14,934 DEBUG [http-nio-63040-exec-3][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:14,934 DEBUG [http-nio-63040-exec-3][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:14,935 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - Writing [[CourseCategoryTreeDto(childrenTreeNodes=[CourseCategoryTreeDto(childrenTreeNodes=null), CourseCateg (truncated)...]
-2023-03-29 22:00:14,935 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - Writing [[CourseCategoryTreeDto(childrenTreeNodes=[CourseCategoryTreeDto(childrenTreeNodes=null), CourseCateg (truncated)...]
-2023-03-29 22:00:14,937 DEBUG [http-nio-63040-exec-2][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:14,937 DEBUG [http-nio-63040-exec-2][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:14,937 DEBUG [http-nio-63040-exec-2][LogFormatUtils.java:91] - Writing [CourseBaseInfoDto(charge=201001, price=1.0, originalPrice=198.0, qq=24965575, wechat=24965575, phone (truncated)...]
-2023-03-29 22:00:14,937 DEBUG [http-nio-63040-exec-2][LogFormatUtils.java:91] - Writing [CourseBaseInfoDto(charge=201001, price=1.0, originalPrice=198.0, qq=24965575, wechat=24965575, phone (truncated)...]
-2023-03-29 22:00:14,939 DEBUG [http-nio-63040-exec-2][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:14,939 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:14,939 DEBUG [http-nio-63040-exec-2][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:14,939 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:19,602 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:19,602 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:19,602 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:19,602 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:21,483 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:21,483 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:21,483 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:21,483 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:22,124 DEBUG [http-nio-63040-exec-6][LogFormatUtils.java:91] - PUT "/content/course", parameters={}
-2023-03-29 22:00:22,124 DEBUG [http-nio-63040-exec-6][LogFormatUtils.java:91] - PUT "/content/course", parameters={}
-2023-03-29 22:00:22,124 DEBUG [http-nio-63040-exec-6][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#modifyCourseBase(EditCourseDto)
-2023-03-29 22:00:22,124 DEBUG [http-nio-63040-exec-6][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#modifyCourseBase(EditCourseDto)
-2023-03-29 22:00:22,130 DEBUG [http-nio-63040-exec-6][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [EditCourseDto(id=117)]
-2023-03-29 22:00:22,130 DEBUG [http-nio-63040-exec-6][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [EditCourseDto(id=117)]
-2023-03-29 22:00:22,209 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,209 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,209 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2762432b] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,209 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2762432b] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,209 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,209 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,210 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@1513573606 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,210 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@1513573606 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,210 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:22,210 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:22,210 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,210 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,212 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,212 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,213 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2762432b]
-2023-03-29 22:00:22,213 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2762432b]
-2023-03-29 22:00:22,220 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,220 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,220 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@196ef911] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,220 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@196ef911] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,224 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,224 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,225 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@555338127 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,225 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@555338127 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,225 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: UPDATE course_base SET company_id=?, name=?, users=?, tags=?, mt=?, st=?, grade=?, teachmode=?, description=?, pic=?, create_date=?, change_date=?, audit_status=?, status=? WHERE id=?
-2023-03-29 22:00:22,225 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: UPDATE course_base SET company_id=?, name=?, users=?, tags=?, mt=?, st=?, grade=?, teachmode=?, description=?, pic=?, create_date=?, change_date=?, audit_status=?, status=? WHERE id=?
-2023-03-29 22:00:22,227 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 1232141425(Long), Nacos微服务开发实战(String), 中高级Java开发工程师(String), (String), 1-3(String), 1-3-2(String), 204002(String), 200002(String), Nacos 是阿里巴巴推出来的一个新开源项目，这是一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
-
-Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。
-
-Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 Nacos 是构建以“服务”为中心的现代应用架构 (例如微服务范式、云原生范式) 的服务基础设施
-
-Nacos 支持如下核心特性：
-
-1）服务发现： 支持 DNS 与 RPC 服务发现，也提供原生 SDK 、OpenAPI 等多种服务注册方式和 DNS、HTTP 与 API 等多种服务发现方式。
-2）服务健康监测： Nacos 提供对服务的实时的健康检查，阻止向不健康的主机或服务实例发送请求。
-3）动态配置服务： Nacos 提供配置统一管理功能，能够帮助我们将配置以中心化、外部化和动态化的方式管理所有环境的应用配置和服务配置。
-4）动态 DNS 服务： Nacos 支持动态 DNS 服务权重路由，能够让我们很容易地实现中间层负载均衡、更灵活的路由策略、流量控制以及数据中心内网的简单 DNS 解析服务。
-5）服务及其元数据管理： Nacos 支持从微服务平台建设的视角管理数据中心的所有服务及元数据，包括管理服务的描述、生命周期、服务的静态依赖分析、服务的健康状态、服务的流量管理、路由及安全策略、服务的 SLA 以及最首要的 metrics 统计数据。(String), /mediafiles/2022/10/04/8026f17cf7b8697eccec2c8406d0c96c.png(String), 2022-10-04T18:58:11(LocalDateTime), 2023-03-29T22:00:22.219(LocalDateTime), 202004(String), 203002(String), 117(Long)
-2023-03-29 22:00:22,227 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 1232141425(Long), Nacos微服务开发实战(String), 中高级Java开发工程师(String), (String), 1-3(String), 1-3-2(String), 204002(String), 200002(String), Nacos 是阿里巴巴推出来的一个新开源项目，这是一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
-
-Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。
-
-Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 Nacos 是构建以“服务”为中心的现代应用架构 (例如微服务范式、云原生范式) 的服务基础设施
-
-Nacos 支持如下核心特性：
-
-1）服务发现： 支持 DNS 与 RPC 服务发现，也提供原生 SDK 、OpenAPI 等多种服务注册方式和 DNS、HTTP 与 API 等多种服务发现方式。
-2）服务健康监测： Nacos 提供对服务的实时的健康检查，阻止向不健康的主机或服务实例发送请求。
-3）动态配置服务： Nacos 提供配置统一管理功能，能够帮助我们将配置以中心化、外部化和动态化的方式管理所有环境的应用配置和服务配置。
-4）动态 DNS 服务： Nacos 支持动态 DNS 服务权重路由，能够让我们很容易地实现中间层负载均衡、更灵活的路由策略、流量控制以及数据中心内网的简单 DNS 解析服务。
-5）服务及其元数据管理： Nacos 支持从微服务平台建设的视角管理数据中心的所有服务及元数据，包括管理服务的描述、生命周期、服务的静态依赖分析、服务的健康状态、服务的流量管理、路由及安全策略、服务的 SLA 以及最首要的 metrics 统计数据。(String), /mediafiles/2022/10/04/8026f17cf7b8697eccec2c8406d0c96c.png(String), 2022-10-04T18:58:11(LocalDateTime), 2023-03-29T22:00:22.219(LocalDateTime), 202004(String), 203002(String), 117(Long)
-2023-03-29 22:00:22,293 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==    Updates: 1
-2023-03-29 22:00:22,293 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==    Updates: 1
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@196ef911]
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@196ef911]
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c41b426] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c41b426] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,294 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,295 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@1510374332 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,295 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@1510374332 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,295 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:22,295 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:22,296 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,296 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,323 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,323 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,323 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c41b426]
-2023-03-29 22:00:22,323 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c41b426]
-2023-03-29 22:00:22,323 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,323 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,324 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e149db6] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,324 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e149db6] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,325 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,325 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,326 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@525725398 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,326 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@525725398 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,326 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: UPDATE course_market SET charge=?, price=?, original_price=?, qq=?, wechat=?, phone=?, valid_days=? WHERE id=?
-2023-03-29 22:00:22,326 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: UPDATE course_market SET charge=?, price=?, original_price=?, qq=?, wechat=?, phone=?, valid_days=? WHERE id=?
-2023-03-29 22:00:22,327 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 201001(String), 1.0(Float), 198.0(Float), 24965575(String), 24965575(String), 24965575(String), 365(Integer), 117(Long)
-2023-03-29 22:00:22,327 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 201001(String), 1.0(Float), 198.0(Float), 24965575(String), 24965575(String), 24965575(String), 365(Integer), 117(Long)
-2023-03-29 22:00:22,334 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==    Updates: 1
-2023-03-29 22:00:22,334 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==    Updates: 1
-2023-03-29 22:00:22,335 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e149db6]
-2023-03-29 22:00:22,335 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e149db6]
-2023-03-29 22:00:22,335 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,335 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,335 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6a540c] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,335 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6a540c] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,336 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,336 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,336 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@1418303834 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,336 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@1418303834 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,336 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:22,336 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:22,337 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,337 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,355 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,355 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,356 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6a540c]
-2023-03-29 22:00:22,356 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e6a540c]
-2023-03-29 22:00:22,356 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,356 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,356 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fde88ae] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,356 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fde88ae] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,357 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,357 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,357 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@864576365 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,357 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@864576365 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,357 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:22,357 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:22,358 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,358 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,359 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,359 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,360 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fde88ae]
-2023-03-29 22:00:22,360 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fde88ae]
-2023-03-29 22:00:22,360 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,360 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,361 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43c81497] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,361 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43c81497] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,361 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,361 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,361 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@858489992 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,361 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@858489992 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,362 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:22,362 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:22,362 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 1-3-2(String)
-2023-03-29 22:00:22,362 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 1-3-2(String)
-2023-03-29 22:00:22,364 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,364 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,364 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43c81497]
-2023-03-29 22:00:22,364 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43c81497]
-2023-03-29 22:00:22,365 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,365 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,365 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34ca6f3d] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,365 DEBUG [http-nio-63040-exec-6][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34ca6f3d] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,365 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,365 DEBUG [http-nio-63040-exec-6][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,366 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@848017479 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,366 DEBUG [http-nio-63040-exec-6][Logger.java:49] - JDBC Connection [HikariProxyConnection@848017479 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,366 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:22,366 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:22,366 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 1-3(String)
-2023-03-29 22:00:22,366 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - ==> Parameters: 1-3(String)
-2023-03-29 22:00:22,368 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,368 DEBUG [http-nio-63040-exec-6][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:22,368 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34ca6f3d]
-2023-03-29 22:00:22,368 DEBUG [http-nio-63040-exec-6][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34ca6f3d]
-2023-03-29 22:00:22,372 DEBUG [http-nio-63040-exec-6][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:22,372 DEBUG [http-nio-63040-exec-6][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:22,372 DEBUG [http-nio-63040-exec-6][LogFormatUtils.java:91] - Writing [CourseBaseInfoDto(charge=201001, price=1.0, originalPrice=198.0, qq=24965575, wechat=24965575, phone (truncated)...]
-2023-03-29 22:00:22,372 DEBUG [http-nio-63040-exec-6][LogFormatUtils.java:91] - Writing [CourseBaseInfoDto(charge=201001, price=1.0, originalPrice=198.0, qq=24965575, wechat=24965575, phone (truncated)...]
-2023-03-29 22:00:22,373 DEBUG [http-nio-63040-exec-6][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:22,373 DEBUG [http-nio-63040-exec-6][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:22,379 DEBUG [http-nio-63040-exec-7][LogFormatUtils.java:91] - GET "/content/teachplan/117/tree-nodes", parameters={}
-2023-03-29 22:00:22,379 DEBUG [http-nio-63040-exec-7][LogFormatUtils.java:91] - GET "/content/teachplan/117/tree-nodes", parameters={}
-2023-03-29 22:00:22,380 DEBUG [http-nio-63040-exec-7][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.TeachplanController#getTreeNodes(Long)
-2023-03-29 22:00:22,380 DEBUG [http-nio-63040-exec-7][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.TeachplanController#getTreeNodes(Long)
-2023-03-29 22:00:22,380 DEBUG [http-nio-63040-exec-7][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,380 DEBUG [http-nio-63040-exec-7][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5abeb150] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5abeb150] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][Logger.java:49] - JDBC Connection [HikariProxyConnection@1417237623 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][Logger.java:49] - JDBC Connection [HikariProxyConnection@1417237623 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][BaseJdbcLogger.java:137] - ==>  Preparing: select one.id one_id, one.pname one_pname, one.parentid one_parentid, one.grade one_grade, one.media_type one_mediaType, one.start_time one_stratTime, one.end_time one_endTime, one.orderby one_orderby, one.course_id one_courseId, one.course_pub_id one_coursePubId, two.id two_id, two.pname two_pname, two.parentid two_parentid, two.grade two_grade, two.media_type two_mediaType, two.start_time two_stratTime, two.end_time two_endTime, two.orderby two_orderby, two.course_id two_courseId, two.course_pub_id two_coursePubId, m1.media_fileName mediaFilename, m1.id teachplanMeidaId, m1.media_id mediaId from teachplan one INNER JOIN teachplan two on one.id = two.parentid LEFT JOIN teachplan_media m1 on m1.teachplan_id = two.id where one.parentid = 0 and one.course_id=? order by one.orderby, two.orderby
-2023-03-29 22:00:22,381 DEBUG [http-nio-63040-exec-7][BaseJdbcLogger.java:137] - ==>  Preparing: select one.id one_id, one.pname one_pname, one.parentid one_parentid, one.grade one_grade, one.media_type one_mediaType, one.start_time one_stratTime, one.end_time one_endTime, one.orderby one_orderby, one.course_id one_courseId, one.course_pub_id one_coursePubId, two.id two_id, two.pname two_pname, two.parentid two_parentid, two.grade two_grade, two.media_type two_mediaType, two.start_time two_stratTime, two.end_time two_endTime, two.orderby two_orderby, two.course_id two_courseId, two.course_pub_id two_coursePubId, m1.media_fileName mediaFilename, m1.id teachplanMeidaId, m1.media_id mediaId from teachplan one INNER JOIN teachplan two on one.id = two.parentid LEFT JOIN teachplan_media m1 on m1.teachplan_id = two.id where one.parentid = 0 and one.course_id=? order by one.orderby, two.orderby
-2023-03-29 22:00:22,382 DEBUG [http-nio-63040-exec-7][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,382 DEBUG [http-nio-63040-exec-7][BaseJdbcLogger.java:137] - ==> Parameters: 117(Long)
-2023-03-29 22:00:22,412 DEBUG [http-nio-63040-exec-7][BaseJdbcLogger.java:137] - <==      Total: 9
-2023-03-29 22:00:22,412 DEBUG [http-nio-63040-exec-7][BaseJdbcLogger.java:137] - <==      Total: 9
-2023-03-29 22:00:22,412 DEBUG [http-nio-63040-exec-7][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5abeb150]
-2023-03-29 22:00:22,412 DEBUG [http-nio-63040-exec-7][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5abeb150]
-2023-03-29 22:00:22,413 DEBUG [http-nio-63040-exec-7][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:22,413 DEBUG [http-nio-63040-exec-7][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:22,413 DEBUG [http-nio-63040-exec-7][LogFormatUtils.java:91] - Writing [[TeachplanDto(teachPlanTreeNodes=[TeachplanDto(teachPlanTreeNodes=null, teachplanMedia=TeachplanMedi (truncated)...]
-2023-03-29 22:00:22,413 DEBUG [http-nio-63040-exec-7][LogFormatUtils.java:91] - Writing [[TeachplanDto(teachPlanTreeNodes=[TeachplanDto(teachPlanTreeNodes=null, teachplanMedia=TeachplanMedi (truncated)...]
-2023-03-29 22:00:22,417 DEBUG [http-nio-63040-exec-7][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:22,417 DEBUG [http-nio-63040-exec-7][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:33,000 DEBUG [http-nio-63040-exec-5][LogFormatUtils.java:91] - POST "/content/teachplan", parameters={}
-2023-03-29 22:00:33,000 DEBUG [http-nio-63040-exec-5][LogFormatUtils.java:91] - POST "/content/teachplan", parameters={}
-2023-03-29 22:00:33,001 DEBUG [http-nio-63040-exec-5][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2023-03-29 22:00:33,001 DEBUG [http-nio-63040-exec-5][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2023-03-29 22:00:33,003 DEBUG [http-nio-63040-exec-5][ResourceHttpRequestHandler.java:487] - Resource not found
-2023-03-29 22:00:33,003 DEBUG [http-nio-63040-exec-5][ResourceHttpRequestHandler.java:487] - Resource not found
-2023-03-29 22:00:33,003 DEBUG [http-nio-63040-exec-5][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
-2023-03-29 22:00:33,003 DEBUG [http-nio-63040-exec-5][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
-2023-03-29 22:00:33,004 DEBUG [http-nio-63040-exec-5][LogFormatUtils.java:91] - "ERROR" dispatch for POST "/content/error", parameters={}
-2023-03-29 22:00:33,004 DEBUG [http-nio-63040-exec-5][LogFormatUtils.java:91] - "ERROR" dispatch for POST "/content/error", parameters={}
-2023-03-29 22:00:33,004 DEBUG [http-nio-63040-exec-5][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2023-03-29 22:00:33,004 DEBUG [http-nio-63040-exec-5][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2023-03-29 22:00:33,005 DEBUG [http-nio-63040-exec-5][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:33,005 DEBUG [http-nio-63040-exec-5][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:33,005 DEBUG [http-nio-63040-exec-5][LogFormatUtils.java:91] - Writing [{timestamp=Wed Mar 29 22:00:33 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
-2023-03-29 22:00:33,005 DEBUG [http-nio-63040-exec-5][LogFormatUtils.java:91] - Writing [{timestamp=Wed Mar 29 22:00:33 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
-2023-03-29 22:00:33,006 DEBUG [http-nio-63040-exec-5][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
-2023-03-29 22:00:33,006 DEBUG [http-nio-63040-exec-5][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
-2023-03-29 22:00:37,236 DEBUG [http-nio-63040-exec-8][LogFormatUtils.java:91] - POST "/content/teachplan", parameters={}
-2023-03-29 22:00:37,236 DEBUG [http-nio-63040-exec-8][LogFormatUtils.java:91] - POST "/content/teachplan", parameters={}
-2023-03-29 22:00:37,237 DEBUG [http-nio-63040-exec-8][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2023-03-29 22:00:37,237 DEBUG [http-nio-63040-exec-8][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2023-03-29 22:00:37,238 DEBUG [http-nio-63040-exec-8][ResourceHttpRequestHandler.java:487] - Resource not found
-2023-03-29 22:00:37,238 DEBUG [http-nio-63040-exec-8][ResourceHttpRequestHandler.java:487] - Resource not found
-2023-03-29 22:00:37,238 DEBUG [http-nio-63040-exec-8][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
-2023-03-29 22:00:37,238 DEBUG [http-nio-63040-exec-8][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
-2023-03-29 22:00:37,239 DEBUG [http-nio-63040-exec-8][LogFormatUtils.java:91] - "ERROR" dispatch for POST "/content/error", parameters={}
-2023-03-29 22:00:37,239 DEBUG [http-nio-63040-exec-8][LogFormatUtils.java:91] - "ERROR" dispatch for POST "/content/error", parameters={}
-2023-03-29 22:00:37,239 DEBUG [http-nio-63040-exec-8][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2023-03-29 22:00:37,239 DEBUG [http-nio-63040-exec-8][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2023-03-29 22:00:37,240 DEBUG [http-nio-63040-exec-8][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:37,240 DEBUG [http-nio-63040-exec-8][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:37,240 DEBUG [http-nio-63040-exec-8][LogFormatUtils.java:91] - Writing [{timestamp=Wed Mar 29 22:00:37 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
-2023-03-29 22:00:37,240 DEBUG [http-nio-63040-exec-8][LogFormatUtils.java:91] - Writing [{timestamp=Wed Mar 29 22:00:37 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
-2023-03-29 22:00:37,240 DEBUG [http-nio-63040-exec-8][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
-2023-03-29 22:00:37,240 DEBUG [http-nio-63040-exec-8][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
-2023-03-29 22:00:41,751 DEBUG [http-nio-63040-exec-9][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:41,751 DEBUG [http-nio-63040-exec-9][LogFormatUtils.java:91] - POST "/content/course/list?pageNo=1&pageSize=10", parameters={masked}
-2023-03-29 22:00:41,751 DEBUG [http-nio-63040-exec-9][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:41,751 DEBUG [http-nio-63040-exec-9][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2023-03-29 22:00:41,754 DEBUG [http-nio-63040-exec-9][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=, publishStatus=null)]
-2023-03-29 22:00:41,754 DEBUG [http-nio-63040-exec-9][LogFormatUtils.java:91] - Read "application/json;charset=UTF-8" to [QueryCourseParamsDto(auditStatus=, courseName=, publishStatus=null)]
-2023-03-29 22:00:41,755 DEBUG [http-nio-63040-exec-9][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:41,755 DEBUG [http-nio-63040-exec-9][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e9bb71b] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:41,755 DEBUG [http-nio-63040-exec-9][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:41,755 DEBUG [http-nio-63040-exec-9][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e9bb71b] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:41,760 DEBUG [http-nio-63040-exec-9][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:41,760 DEBUG [http-nio-63040-exec-9][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:41,761 DEBUG [http-nio-63040-exec-9][Logger.java:49] - JDBC Connection [HikariProxyConnection@610524267 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:41,761 DEBUG [http-nio-63040-exec-9][Logger.java:49] - JDBC Connection [HikariProxyConnection@610524267 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:41,761 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base
-2023-03-29 22:00:41,761 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT COUNT(*) FROM course_base
-2023-03-29 22:00:41,761 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==> Parameters: 
-2023-03-29 22:00:41,761 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==> Parameters: 
-2023-03-29 22:00:41,763 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:41,763 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:41,764 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base LIMIT ?
-2023-03-29 22:00:41,764 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base LIMIT ?
-2023-03-29 22:00:41,764 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==> Parameters: 10(Long)
-2023-03-29 22:00:41,764 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - ==> Parameters: 10(Long)
-2023-03-29 22:00:41,767 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - <==      Total: 10
-2023-03-29 22:00:41,767 DEBUG [http-nio-63040-exec-9][BaseJdbcLogger.java:137] - <==      Total: 10
-2023-03-29 22:00:41,767 DEBUG [http-nio-63040-exec-9][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e9bb71b]
-2023-03-29 22:00:41,767 DEBUG [http-nio-63040-exec-9][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e9bb71b]
-2023-03-29 22:00:41,768 DEBUG [http-nio-63040-exec-9][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:41,768 DEBUG [http-nio-63040-exec-9][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:41,768 DEBUG [http-nio-63040-exec-9][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=1, companyId=1232141425, companyName=, name=JAVA8/9/10新特性讲解, users=j (truncated)...]
-2023-03-29 22:00:41,768 DEBUG [http-nio-63040-exec-9][LogFormatUtils.java:91] - Writing [PageResult(items=[CourseBase(id=1, companyId=1232141425, companyName=, name=JAVA8/9/10新特性讲解, users=j (truncated)...]
-2023-03-29 22:00:41,770 DEBUG [http-nio-63040-exec-9][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:41,770 DEBUG [http-nio-63040-exec-9][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:42,688 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - GET "/content/course-category/tree-nodes", parameters={}
-2023-03-29 22:00:42,688 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - GET "/content/course-category/tree-nodes", parameters={}
-2023-03-29 22:00:42,688 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - GET "/content/course/2", parameters={}
-2023-03-29 22:00:42,688 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - GET "/content/course/2", parameters={}
-2023-03-29 22:00:42,688 DEBUG [http-nio-63040-exec-10][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseCategoryController#queryTreeNodes()
-2023-03-29 22:00:42,688 DEBUG [http-nio-63040-exec-10][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseCategoryController#queryTreeNodes()
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#getCourseBaseById(Long)
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to com.xuecheng.content.api.CourseBaseInfoController#getCourseBaseById(Long)
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-10][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a5814e] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-10][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a5814e] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-10][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,689 DEBUG [http-nio-63040-exec-10][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,690 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dcba474] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,690 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dcba474] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,690 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,690 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,690 DEBUG [http-nio-63040-exec-10][Logger.java:49] - JDBC Connection [HikariProxyConnection@363267226 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:42,690 DEBUG [http-nio-63040-exec-10][Logger.java:49] - JDBC Connection [HikariProxyConnection@363267226 wrapping com.mysql.cj.jdbc.ConnectionImpl@14a8f370] will not be managed by Spring
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@702075536 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@702075536 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==> Parameters: 1(String)
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,company_id,company_name,name,users,tags,mt,st,grade,teachmode,description,pic,create_date,change_date,create_people,change_people,audit_status,status FROM course_base WHERE id=?
-2023-03-29 22:00:42,691 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ==> Parameters: 1(String)
-2023-03-29 22:00:42,692 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 2(Long)
-2023-03-29 22:00:42,692 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 2(Long)
-2023-03-29 22:00:42,693 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,693 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,694 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-1(String)
-2023-03-29 22:00:42,694 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-1(String)
-2023-03-29 22:00:42,694 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,694 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,694 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dcba474]
-2023-03-29 22:00:42,694 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dcba474]
-2023-03-29 22:00:42,695 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,695 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,695 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37af2b2c] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,695 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37af2b2c] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,695 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,695 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,696 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:42,696 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:42,696 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@1485579035 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,696 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@1485579035 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,696 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:42,696 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,charge,price,original_price,qq,wechat,phone,valid_days FROM course_market WHERE id=?
-2023-03-29 22:00:42,697 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 2(Long)
-2023-03-29 22:00:42,697 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 2(Long)
-2023-03-29 22:00:42,697 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,697 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,697 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-2(String)
-2023-03-29 22:00:42,697 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-2(String)
-2023-03-29 22:00:42,698 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,698 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37af2b2c]
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37af2b2c]
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11341839] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,699 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11341839] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-3(String)
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-3(String)
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@1594664824 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@1594664824 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:42,700 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:42,702 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1-1-1(String)
-2023-03-29 22:00:42,703 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:42,702 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1-1-1(String)
-2023-03-29 22:00:42,704 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,703 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 8
-2023-03-29 22:00:42,704 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,704 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-4(String)
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-4(String)
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11341839]
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11341839]
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,705 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Creating a new SqlSession
-2023-03-29 22:00:42,706 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f4e893] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,706 DEBUG [http-nio-63040-exec-1][Logger.java:49] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f4e893] was not registered for synchronization because synchronization is not active
-2023-03-29 22:00:42,706 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,706 DEBUG [http-nio-63040-exec-1][DataSourceUtils.java:115] - Fetching JDBC Connection from DataSource
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@363911652 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-1][Logger.java:49] - JDBC Connection [HikariProxyConnection@363911652 wrapping com.mysql.cj.jdbc.ConnectionImpl@27791b0f] will not be managed by Spring
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==>  Preparing: SELECT id,name,label,parentid,is_show,orderby,is_leaf FROM course_category WHERE id=?
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1-1(String)
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - ==> Parameters: 1-1(String)
-2023-03-29 22:00:42,707 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,708 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-5(String)
-2023-03-29 22:00:42,708 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-5(String)
-2023-03-29 22:00:42,709 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,709 DEBUG [http-nio-63040-exec-1][BaseJdbcLogger.java:137] - <==      Total: 1
-2023-03-29 22:00:42,709 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f4e893]
-2023-03-29 22:00:42,709 DEBUG [http-nio-63040-exec-1][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f4e893]
-2023-03-29 22:00:42,709 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 7
-2023-03-29 22:00:42,709 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 7
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Writing [CourseBaseInfoDto(charge=201001, price=1.0, originalPrice=10000.0, qq=2222, wechat=3333, phone=4444, (truncated)...]
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Writing [CourseBaseInfoDto(charge=201001, price=1.0, originalPrice=10000.0, qq=2222, wechat=3333, phone=4444, (truncated)...]
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-6(String)
-2023-03-29 22:00:42,711 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:42,710 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-6(String)
-2023-03-29 22:00:42,711 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:42,713 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:42,713 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:42,714 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,714 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,714 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-7(String)
-2023-03-29 22:00:42,714 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-7(String)
-2023-03-29 22:00:42,716 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 19
-2023-03-29 22:00:42,716 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 19
-2023-03-29 22:00:42,717 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,717 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,718 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-8(String)
-2023-03-29 22:00:42,718 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-8(String)
-2023-03-29 22:00:42,721 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:42,721 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:42,721 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,721 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,722 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-9(String)
-2023-03-29 22:00:42,722 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-9(String)
-2023-03-29 22:00:42,724 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 11
-2023-03-29 22:00:42,724 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 11
-2023-03-29 22:00:42,725 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,725 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,725 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-10(String)
-2023-03-29 22:00:42,725 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-10(String)
-2023-03-29 22:00:42,727 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 5
-2023-03-29 22:00:42,727 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 5
-2023-03-29 22:00:42,728 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,728 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,730 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-11(String)
-2023-03-29 22:00:42,730 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-11(String)
-2023-03-29 22:00:42,733 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:42,733 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:42,734 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,734 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,734 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-12(String)
-2023-03-29 22:00:42,734 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-12(String)
-2023-03-29 22:00:42,737 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:42,737 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 6
-2023-03-29 22:00:42,739 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,739 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,739 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-13(String)
-2023-03-29 22:00:42,739 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-13(String)
-2023-03-29 22:00:42,742 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:42,742 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 9
-2023-03-29 22:00:42,743 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,743 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,743 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-14(String)
-2023-03-29 22:00:42,743 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-14(String)
-2023-03-29 22:00:42,745 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:42,745 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 10
-2023-03-29 22:00:42,746 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,746 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====>  Preparing: SELECT * FROM course_category o WHERE o.parentid = ? ORDER BY o.orderby
-2023-03-29 22:00:42,746 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-15(String)
-2023-03-29 22:00:42,746 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - ====> Parameters: 1-15(String)
-2023-03-29 22:00:42,748 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 1
-2023-03-29 22:00:42,748 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <====      Total: 1
-2023-03-29 22:00:42,748 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <==      Total: 15
-2023-03-29 22:00:42,748 DEBUG [http-nio-63040-exec-10][BaseJdbcLogger.java:137] - <==      Total: 15
-2023-03-29 22:00:42,748 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a5814e]
-2023-03-29 22:00:42,748 DEBUG [http-nio-63040-exec-10][Logger.java:49] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a5814e]
-2023-03-29 22:00:42,749 DEBUG [http-nio-63040-exec-10][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:42,749 DEBUG [http-nio-63040-exec-10][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-03-29 22:00:42,749 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - Writing [[CourseCategoryTreeDto(childrenTreeNodes=[CourseCategoryTreeDto(childrenTreeNodes=null), CourseCateg (truncated)...]
-2023-03-29 22:00:42,749 DEBUG [http-nio-63040-exec-10][LogFormatUtils.java:91] - Writing [[CourseCategoryTreeDto(childrenTreeNodes=[CourseCategoryTreeDto(childrenTreeNodes=null), CourseCateg (truncated)...]
-2023-03-29 22:00:42,751 DEBUG [http-nio-63040-exec-10][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:42,751 DEBUG [http-nio-63040-exec-10][FrameworkServlet.java:1131] - Completed 200 OK
-2023-03-29 22:00:49,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:49,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:49,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:49,606 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:51,487 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:51,487 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:00:51,487 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:00:51,487 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:01:19,609 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:01:19,609 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:01:19,609 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:01:19,609 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:01:21,490 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:01:21,490 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-2023-03-29 22:01:21,490 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
-2023-03-29 22:01:21,490 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:00:20,798 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:00:20,814 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:00:20,798 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:00:20,814 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:00:44,434 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:00:44,434 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:00:44,434 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:00:44,434 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:00:50,813 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:00:50,813 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:00:50,813 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:00:50,813 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:14,439 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:14,439 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:14,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:14,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:20,811 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:20,811 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:20,811 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:20,811 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:33,878 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - DELETE "/content/teachplan/290", parameters={}
+2023-05-25 22:01:33,878 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - DELETE "/content/teachplan/290", parameters={}
+2023-05-25 22:01:33,879 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-05-25 22:01:33,879 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-05-25 22:01:33,882 DEBUG [http-nio-63040-exec-1][ResourceHttpRequestHandler.java:487] - Resource not found
+2023-05-25 22:01:33,882 DEBUG [http-nio-63040-exec-1][ResourceHttpRequestHandler.java:487] - Resource not found
+2023-05-25 22:01:33,882 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
+2023-05-25 22:01:33,882 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
+2023-05-25 22:01:33,883 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - "ERROR" dispatch for DELETE "/content/error", parameters={}
+2023-05-25 22:01:33,883 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - "ERROR" dispatch for DELETE "/content/error", parameters={}
+2023-05-25 22:01:33,884 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-25 22:01:33,884 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-25 22:01:33,885 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-05-25 22:01:33,885 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-05-25 22:01:33,885 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Writing [{timestamp=Thu May 25 22:01:33 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
+2023-05-25 22:01:33,885 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:91] - Writing [{timestamp=Thu May 25 22:01:33 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
+2023-05-25 22:01:33,888 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
+2023-05-25 22:01:33,888 DEBUG [http-nio-63040-exec-1][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
+2023-05-25 22:01:44,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:44,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:44,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:44,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:44,708 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - DELETE "/content/teachplan/268", parameters={}
+2023-05-25 22:01:44,708 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - DELETE "/content/teachplan/268", parameters={}
+2023-05-25 22:01:44,709 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-05-25 22:01:44,709 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:415] - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-05-25 22:01:44,711 DEBUG [http-nio-63040-exec-3][ResourceHttpRequestHandler.java:487] - Resource not found
+2023-05-25 22:01:44,711 DEBUG [http-nio-63040-exec-3][ResourceHttpRequestHandler.java:487] - Resource not found
+2023-05-25 22:01:44,711 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
+2023-05-25 22:01:44,711 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1131] - Completed 404 NOT_FOUND
+2023-05-25 22:01:44,711 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - "ERROR" dispatch for DELETE "/content/error", parameters={}
+2023-05-25 22:01:44,711 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - "ERROR" dispatch for DELETE "/content/error", parameters={}
+2023-05-25 22:01:44,712 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-25 22:01:44,712 DEBUG [http-nio-63040-exec-3][AbstractHandlerMapping.java:415] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-05-25 22:01:44,713 DEBUG [http-nio-63040-exec-3][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-05-25 22:01:44,713 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - Writing [{timestamp=Thu May 25 22:01:44 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
+2023-05-25 22:01:44,717 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
+2023-05-25 22:01:44,713 DEBUG [http-nio-63040-exec-3][AbstractMessageConverterMethodProcessor.java:255] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-05-25 22:01:44,713 DEBUG [http-nio-63040-exec-3][LogFormatUtils.java:91] - Writing [{timestamp=Thu May 25 22:01:44 CST 2023, status=404, error=Not Found, message=, path=/content/teachp (truncated)...]
+2023-05-25 22:01:44,717 DEBUG [http-nio-63040-exec-3][FrameworkServlet.java:1127] - Exiting from "ERROR" dispatch, status 404
+2023-05-25 22:01:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:01:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:01:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:14,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:14,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:14,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:14,440 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:20,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:20,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:20,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:20,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:44,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:44,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:44,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:44,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:02:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:02:50,810 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:14,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:14,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:14,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:14,441 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:20,808 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:20,808 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:20,808 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:20,808 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:44,439 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:44,439 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:44,439 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:44,439 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:50,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:50,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:03:50,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:03:50,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:14,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:14,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:14,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:14,446 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:20,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:20,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:20,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:20,807 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:44,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:44,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:44,576 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:44,576 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:50,815 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:50,815 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:04:50,816 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:04:50,816 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:20,826 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:20,826 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:20,826 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:20,826 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:44,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:44,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:44,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:44,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:50,873 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:50,873 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:05:50,873 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:05:50,873 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:14,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:14,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:14,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:14,575 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:20,872 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:20,872 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:20,872 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:20,872 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:50,871 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:50,871 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:06:50,871 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:06:50,871 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:14,574 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:20,869 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:20,869 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:20,869 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:20,869 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:44,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:07:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:07:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:14,572 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:14,572 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:14,572 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:14,572 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:20,866 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:20,866 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:20,866 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:20,866 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:44,571 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:44,571 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:44,571 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:44,571 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:08:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:08:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:14,572 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:14,572 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:14,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:14,573 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:20,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:20,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:20,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:20,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:44,582 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:44,582 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:44,583 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:44,583 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:09:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:09:50,867 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:14,584 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:14,584 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:14,584 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:14,584 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:20,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:20,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:20,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:20,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:44,586 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:44,586 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:44,586 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:44,586 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:50,883 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:50,883 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:10:50,883 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:10:50,883 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:20,886 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:20,886 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:20,886 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:20,886 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:50,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:50,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:11:50,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:11:50,885 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:14,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:20,887 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:20,887 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:20,887 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:20,887 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:44,598 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:50,888 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:50,888 DEBUG [HikariPool-1 housekeeper][HikariPool.java:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2023-05-25 22:12:50,888 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2023-05-25 22:12:50,888 DEBUG [HikariPool-1 housekeeper][HikariPool.java:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
