@@ -21,6 +21,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="xuecheng-plus-base" />
     <orderEntry type="module" module-name="xuecheng-plus-system-model" />
     <orderEntry type="module" module-name="xuecheng-plus-base" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.83" level="project" />

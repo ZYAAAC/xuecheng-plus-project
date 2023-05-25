@@ -2,6 +2,7 @@ package com.xuecheng.content.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.xuecheng.base.execption.XueChengPlusException;
 import com.xuecheng.content.mapper.TeachplanMapper;
 import com.xuecheng.content.model.dto.SaveTeachplanDto;
 import com.xuecheng.content.model.dto.TeachplanDto;
@@ -52,6 +53,28 @@ public class TeachplanServiceImpl implements TeachplanService {
         }
 
     }
+
+    /**
+     * 通过teachplanId删除章节
+     * @param teachplanId
+     */
+    @Override
+    public void deleteTeachplan(Long teachplanId) {
+        //先判断他是大章节还是小章节,也就是对应的parentid是否为0
+        Teachplan teachplan = teachplanMapper.selectById(teachplanId);
+        if (teachplan.getParentid() == 0){
+            //如果是大章节判断是否有小章节
+            QueryWrapper<Teachplan> queryWrapper = new QueryWrapper<>();
+            queryWrapper.eq("parentid",teachplanId);
+            List<Teachplan> teachplans = teachplanMapper.selectList(queryWrapper);
+            //如果有小章节则提示无法删除
+            if (teachplans != null){
+                throw new XueChengPlusException("没有小章节时方可删除");
+            }
+        }
+        teachplanMapper.deleteById(teachplanId);
+    }
+
     /**
      * @description 获取最新的排序号
      * @param courseId  课程id
