@@ -38,9 +38,9 @@ public class TeachplanController {
     }
 
     @ApiOperation("课程计划删除")
-    @PostMapping("/teachplan/{teachplanId}")
+    @DeleteMapping("/teachplan/{teachplanId}")
     public void deleteTeachplan( @PathVariable Long teachplanId){
-
+        teachplanService.deleteTeachplan(teachplanId);
     }
 
     @ApiOperation("向下移动")

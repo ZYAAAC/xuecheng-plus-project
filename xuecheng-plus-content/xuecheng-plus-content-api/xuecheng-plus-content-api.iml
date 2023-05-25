@@ -27,6 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="xuecheng-plus-base" />
     <orderEntry type="module" module-name="xuecheng-plus-content-service" />
     <orderEntry type="module" module-name="xuecheng-plus-content-model" />
     <orderEntry type="module" module-name="xuecheng-plus-base" />
