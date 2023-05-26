@@ -1,0 +1,268 @@
+2023-05-26 19:00:00,365 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40media-api&udpPort=53716&clusters=DEFAULT, body: {}
+2023-05-26 19:00:00,365 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40media-api&udpPort=53716&clusters=DEFAULT, body: {}
+2023-05-26 19:00:00,521 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:00,521 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:00,581 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:00,581 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:01,208 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:01,208 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:01,569 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:476] - HTTP method: POST, url: http://127.0.0.1:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=media-api.yamlxuecheng-plus-projectdev44media-api-dev.yamlxuecheng-plus-project7e41197fdbb4b6bd1194ae292af19ff8dev44logging-dev.yamlxuecheng-plus-commoncf8b1af28beb25b242f97519c8f2c560dev44swagger-dev.yamlxuecheng-plus-common424af1171ee6a6736b538173b3602a9ddev44media-service-dev.yamlxuecheng-plus-project1b8db2b35e36e2cd6e9dd75c9a51e0cfdev44media-apixuecheng-plus-projectdev44, tenant=dev44}
+2023-05-26 19:00:01,569 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:476] - HTTP method: POST, url: http://127.0.0.1:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=media-api.yamlxuecheng-plus-projectdev44media-api-dev.yamlxuecheng-plus-project7e41197fdbb4b6bd1194ae292af19ff8dev44logging-dev.yamlxuecheng-plus-commoncf8b1af28beb25b242f97519c8f2c560dev44swagger-dev.yamlxuecheng-plus-common424af1171ee6a6736b538173b3602a9ddev44media-service-dev.yamlxuecheng-plus-project1b8db2b35e36e2cd6e9dd75c9a51e0cfdev44media-apixuecheng-plus-projectdev44, tenant=dev44}
+2023-05-26 19:00:01,569 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6ce6fde2]
+2023-05-26 19:00:01,569 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6ce6fde2]
+2023-05-26 19:00:04,449 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:04,449 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:04,651 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:04,651 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:04,651 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:04,651 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:05,586 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:05,586 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:05,586 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:05,586 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:06,211 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:06,211 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:08,758 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][ClientWorker.java:430] - [fixed-127.0.0.1_8848-dev44] [polling-resp] config changed. dataId=media-api-dev.yaml, group=xuecheng-plus-project, tenant=dev44
+2023-05-26 19:00:08,758 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][ClientWorker.java:430] - [fixed-127.0.0.1_8848-dev44] [polling-resp] config changed. dataId=media-api-dev.yaml, group=xuecheng-plus-project, tenant=dev44
+2023-05-26 19:00:08,758 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][ClientWorker.java:537] - get changedGroupKeys:[media-api-dev.yaml+xuecheng-plus-project+dev44]
+2023-05-26 19:00:08,758 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][ClientWorker.java:537] - get changedGroupKeys:[media-api-dev.yaml+xuecheng-plus-project+dev44]
+2023-05-26 19:00:08,758 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=media-api-dev.yaml&tenant=dev44&group=xuecheng-plus-project, body: null
+2023-05-26 19:00:08,758 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/cs/configs?dataId=media-api-dev.yaml&tenant=dev44&group=xuecheng-plus-project, body: null
+2023-05-26 19:00:08,758 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6ce6fde2]
+2023-05-26 19:00:08,758 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6ce6fde2]
+2023-05-26 19:00:08,766 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][ClientWorker.java:556] - [fixed-127.0.0.1_8848-dev44] [data-received] dataId=media-api-dev.yaml, group=xuecheng-plus-project, tenant=dev44, md5=fe33ea894c24463483ce3e74fa46e8f6, content=server:
+  servlet:
+    context-path: /media
+  port: 63050
+
+spring:
+  servlet:
+    multipart:
+      m..., type=yaml
+2023-05-26 19:00:08,766 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][ClientWorker.java:556] - [fixed-127.0.0.1_8848-dev44] [data-received] dataId=media-api-dev.yaml, group=xuecheng-plus-project, tenant=dev44, md5=fe33ea894c24463483ce3e74fa46e8f6, content=server:
+  servlet:
+    context-path: /media
+  port: 63050
+
+spring:
+  servlet:
+    multipart:
+      m..., type=yaml
+2023-05-26 19:00:08,767 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][CacheData.java:198] - [fixed-127.0.0.1_8848-dev44] [notify-context] dataId=media-api-dev.yaml, group=xuecheng-plus-project, md5=fe33ea894c24463483ce3e74fa46e8f6
+2023-05-26 19:00:08,767 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][CacheData.java:198] - [fixed-127.0.0.1_8848-dev44] [notify-context] dataId=media-api-dev.yaml, group=xuecheng-plus-project, md5=fe33ea894c24463483ce3e74fa46e8f6
+2023-05-26 19:00:08,981 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40content-api&udpPort=56081&clusters=DEFAULT, body: {}
+2023-05-26 19:00:08,981 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40content-api&udpPort=56081&clusters=DEFAULT, body: {}
+2023-05-26 19:00:09,097 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [127.0.0.1:8848]
+2023-05-26 19:00:09,097 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [127.0.0.1:8848]
+2023-05-26 19:00:09,452 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:09,452 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:09,655 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:09,655 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:09,655 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:09,655 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:10,588 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:10,588 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:10,588 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:10,588 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:10,854 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'swagger-dev.yaml', group: 'xuecheng-plus-common', data: swagger:
+  title: "学成在线内容接口文档"
+  description: "学成在线内容接口文档"
+  base-package: com.xuecheng
+  enabled: true
+  version: 1.0.0
+
+logging:
+  config: classpath:log4j2-dev.xml
+2023-05-26 19:00:10,854 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'swagger-dev.yaml', group: 'xuecheng-plus-common', data: swagger:
+  title: "学成在线内容接口文档"
+  description: "学成在线内容接口文档"
+  base-package: com.xuecheng
+  enabled: true
+  version: 1.0.0
+
+logging:
+  config: classpath:log4j2-dev.xml
+2023-05-26 19:00:10,859 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'logging-dev.yaml', group: 'xuecheng-plus-common', data: # 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+  level:
+    org.springframework.cloud.gateway: trace
+2023-05-26 19:00:10,859 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'logging-dev.yaml', group: 'xuecheng-plus-common', data: # 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml
+  level:
+    org.springframework.cloud.gateway: trace
+2023-05-26 19:00:10,862 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'media-service-dev.yaml', group: 'xuecheng-plus-project', data: spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.128.0.7:3306/xcplus_media?serverTimezone=UTC&userUnicode=true&useSSL=false&
+    username: root
+    password: root
+  cloud:
+   config:
+    override-none: true
+
+minio:
+  endpoint: http://192.168.0.106:9000
+  accessKey: AIgNL9PtX7hqevuy
+  secretKey: ssvX3vD15dzj0fRxxRGO0ku8AFZdXv6S
+  bucket:
+    files: mediafiles
+    videofiles: video
+xxl:
+  job:
+    admin: 
+      addresses: http://192.168.0.106:8088/xxl-job-admin
+    executor:
+      appname: media-process-service
+      address: 
+      ip: 
+      port: 9999
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 30
+    accessToken: default_token
+
+videoprocess:
+ ffmpegpath: D:/soft/ffmpeg/ffmpeg.exe
+
+
+2023-05-26 19:00:10,862 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'media-service-dev.yaml', group: 'xuecheng-plus-project', data: spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.128.0.7:3306/xcplus_media?serverTimezone=UTC&userUnicode=true&useSSL=false&
+    username: root
+    password: root
+  cloud:
+   config:
+    override-none: true
+
+minio:
+  endpoint: http://192.168.0.106:9000
+  accessKey: AIgNL9PtX7hqevuy
+  secretKey: ssvX3vD15dzj0fRxxRGO0ku8AFZdXv6S
+  bucket:
+    files: mediafiles
+    videofiles: video
+xxl:
+  job:
+    admin: 
+      addresses: http://192.168.0.106:8088/xxl-job-admin
+    executor:
+      appname: media-process-service
+      address: 
+      ip: 
+      port: 9999
+      logpath: /data/applogs/xxl-job/jobhandler
+      logretentiondays: 30
+    accessToken: default_token
+
+videoprocess:
+ ffmpegpath: D:/soft/ffmpeg/ffmpeg.exe
+
+
+2023-05-26 19:00:10,867 WARN [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[media-api] & group[xuecheng-plus-project]
+2023-05-26 19:00:10,867 WARN [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[media-api] & group[xuecheng-plus-project]
+2023-05-26 19:00:10,868 WARN [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[media-api.yaml] & group[xuecheng-plus-project]
+2023-05-26 19:00:10,868 WARN [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:87] - Ignore the empty nacos configuration and get it based on dataId[media-api.yaml] & group[xuecheng-plus-project]
+2023-05-26 19:00:10,871 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'media-api-dev.yaml', group: 'xuecheng-plus-project', data: server:
+  servlet:
+    context-path: /media
+  port: 63050
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+
+2023-05-26 19:00:10,871 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosPropertySourceBuilder.java:93] - Loading nacos data, dataId: 'media-api-dev.yaml', group: 'xuecheng-plus-project', data: server:
+  servlet:
+    context-path: /media
+  port: 63050
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+
+2023-05-26 19:00:10,872 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-media-api-dev.yaml,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-media-api.yaml,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-media-api,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-media-service-dev.yaml,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-logging-dev.yaml,xuecheng-plus-common'}, BootstrapPropertySource {name='bootstrapProperties-swagger-dev.yaml,xuecheng-plus-common'}]
+2023-05-26 19:00:10,872 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][PropertySourceBootstrapConfiguration.java:112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-media-api-dev.yaml,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-media-api.yaml,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-media-api,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-media-service-dev.yaml,xuecheng-plus-project'}, BootstrapPropertySource {name='bootstrapProperties-logging-dev.yaml,xuecheng-plus-common'}, BootstrapPropertySource {name='bootstrapProperties-swagger-dev.yaml,xuecheng-plus-common'}]
+2023-05-26 19:00:10,898 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][SpringApplication.java:655] - The following profiles are active: dev
+2023-05-26 19:00:10,898 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][SpringApplication.java:655] - The following profiles are active: dev
+2023-05-26 19:00:10,908 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][StartupInfoLogger.java:61] - Started application in 2.137 seconds (JVM running for 553.695)
+2023-05-26 19:00:10,908 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][StartupInfoLogger.java:61] - Started application in 2.137 seconds (JVM running for 553.695)
+2023-05-26 19:00:10,965 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][RefreshEventListener.java:73] - Refresh keys changed: [spring.servlet.multipart.max-request-size, spring.servlet.multipart.max-file-size]
+2023-05-26 19:00:10,965 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][RefreshEventListener.java:73] - Refresh keys changed: [spring.servlet.multipart.max-request-size, spring.servlet.multipart.max-file-size]
+2023-05-26 19:00:10,965 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosContextRefresher.java:136] - Refresh Nacos config group=xuecheng-plus-project,dataId=media-api-dev.yaml,configInfo=server:
+  servlet:
+    context-path: /media
+  port: 63050
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+
+2023-05-26 19:00:10,965 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosContextRefresher.java:136] - Refresh Nacos config group=xuecheng-plus-project,dataId=media-api-dev.yaml,configInfo=server:
+  servlet:
+    context-path: /media
+  port: 63050
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+
+2023-05-26 19:00:10,966 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][CacheData.java:222] - [fixed-127.0.0.1_8848-dev44] [notify-ok] dataId=media-api-dev.yaml, group=xuecheng-plus-project, md5=fe33ea894c24463483ce3e74fa46e8f6, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@6087acd1 
+2023-05-26 19:00:10,966 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][CacheData.java:222] - [fixed-127.0.0.1_8848-dev44] [notify-ok] dataId=media-api-dev.yaml, group=xuecheng-plus-project, md5=fe33ea894c24463483ce3e74fa46e8f6, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@6087acd1 
+2023-05-26 19:00:10,966 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][CacheData.java:248] - [fixed-127.0.0.1_8848-dev44] [notify-listener] time cost=2200ms in ClientWorker, dataId=media-api-dev.yaml, group=xuecheng-plus-project, md5=fe33ea894c24463483ce3e74fa46e8f6, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@6087acd1 
+2023-05-26 19:00:10,966 INFO [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][CacheData.java:248] - [fixed-127.0.0.1_8848-dev44] [notify-listener] time cost=2200ms in ClientWorker, dataId=media-api-dev.yaml, group=xuecheng-plus-project, md5=fe33ea894c24463483ce3e74fa46e8f6, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@6087acd1 
+2023-05-26 19:00:10,967 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:476] - HTTP method: POST, url: http://127.0.0.1:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=media-api.yamlxuecheng-plus-projectdev44media-api-dev.yamlxuecheng-plus-projectfe33ea894c24463483ce3e74fa46e8f6dev44logging-dev.yamlxuecheng-plus-commoncf8b1af28beb25b242f97519c8f2c560dev44swagger-dev.yamlxuecheng-plus-common424af1171ee6a6736b538173b3602a9ddev44media-service-dev.yamlxuecheng-plus-project1b8db2b35e36e2cd6e9dd75c9a51e0cfdev44media-apixuecheng-plus-projectdev44, tenant=dev44}
+2023-05-26 19:00:10,967 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:476] - HTTP method: POST, url: http://127.0.0.1:8848/nacos/v1/cs/configs/listener, body: {Listening-Configs=media-api.yamlxuecheng-plus-projectdev44media-api-dev.yamlxuecheng-plus-projectfe33ea894c24463483ce3e74fa46e8f6dev44logging-dev.yamlxuecheng-plus-commoncf8b1af28beb25b242f97519c8f2c560dev44swagger-dev.yamlxuecheng-plus-common424af1171ee6a6736b538173b3602a9ddev44media-service-dev.yamlxuecheng-plus-project1b8db2b35e36e2cd6e9dd75c9a51e0cfdev44media-apixuecheng-plus-projectdev44, tenant=dev44}
+2023-05-26 19:00:10,967 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6ce6fde2]
+2023-05-26 19:00:10,967 DEBUG [com.alibaba.nacos.client.Worker.longPolling.fixed-127.0.0.1_8848-dev44][NacosRestTemplate.java:494] - Execute via interceptors :[com.alibaba.nacos.client.config.impl.ConfigHttpClientManager$LimiterHttpClientRequestInterceptor@6ce6fde2]
+2023-05-26 19:00:11,215 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:11,215 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:11,542 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [127.0.0.1:8848]
+2023-05-26 19:00:11,542 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [127.0.0.1:8848]
+2023-05-26 19:00:14,455 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:14,455 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:14,659 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:14,659 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:14,659 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:14,659 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:15,592 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:15,592 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:15,592 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:15,592 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:16,216 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:16,216 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:18,987 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40content-api&udpPort=56081&clusters=DEFAULT, body: {}
+2023-05-26 19:00:18,987 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40content-api&udpPort=56081&clusters=DEFAULT, body: {}
+2023-05-26 19:00:19,457 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:19,457 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:19,663 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:19,663 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:19,663 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:19,663 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:20,590 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40media-api&udpPort=53716&clusters=DEFAULT, body: {}
+2023-05-26 19:00:20,590 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://127.0.0.1:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev44&clientIP=192.168.56.1&serviceName=xuecheng-plus-project%40%40media-api&udpPort=53716&clusters=DEFAULT, body: {}
+2023-05-26 19:00:20,594 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:20,594 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63040, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@content-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:20,594 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:20,594 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40content-api&namespaceId=dev44&port=63040&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:21,217 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:21,217 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:24,472 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:24,472 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2023-05-26 19:00:24,677 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:24,677 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev44 sending beat to server: BeatInfo{port=63050, ip='192.168.56.1', weight=1.0, serviceName='xuecheng-plus-project@@media-api', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2023-05-26 19:00:24,677 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
+2023-05-26 19:00:24,677 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://127.0.0.1:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40media-api&namespaceId=dev44&port=63050&clusterName=DEFAULT&ip=192.168.56.1, body: {}
