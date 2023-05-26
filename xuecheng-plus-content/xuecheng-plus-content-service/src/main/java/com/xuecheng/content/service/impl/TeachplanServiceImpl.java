@@ -55,9 +55,118 @@ public class TeachplanServiceImpl implements TeachplanService {
     }
 
     /**
-     * 通过teachplanId删除章节
-     * @param teachplanId
+     * 向下移动，id是课程id
+     * @param id
      */
+    @Override
+    public void movedownTeachplan(Long id) {
+        //先通过id判断这个是父还是子
+        Teachplan teachplan = teachplanMapper.selectById(id);
+        if (teachplan.getParentid() == 0){
+            //如果是父的话找出该courseid下的所有父id
+            QueryWrapper<Teachplan> queryWrapper = new QueryWrapper<>();
+            queryWrapper.eq("parentid",0).eq("course_id",teachplan.getCourseId());
+            List<Teachplan> teachplans = teachplanMapper.selectList(queryWrapper);
+            //将两个的orberby切换一下
+            try{
+                teachplans.stream().forEach(res -> {
+                    //如果res的orderby是2，teachplan是1
+                    if (res.getOrderby() == teachplan.getOrderby()+1){
+                        //res减1
+                        res.setOrderby(teachplan.getOrderby());
+                        teachplanMapper.updateById(res);
+                        //teachplan+1
+                        teachplan.setOrderby(teachplan.getOrderby()+1);
+                        teachplanMapper.updateById(teachplan);
+                        throw new XueChengPlusException("终止foreach");
+                    }
+                });
+            }catch (Exception e){
+
+            }
+        }
+        //如果是子找出所有父id一样的id
+        QueryWrapper<Teachplan> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("parentid",teachplan.getParentid());
+        List<Teachplan> teachplans = teachplanMapper.selectList(queryWrapper);
+        //修改orderby
+        try{
+            teachplans.stream().forEach(res -> {
+                if (res.getOrderby().equals(teachplan.getOrderby()+1)){
+                    //res减1
+                    res.setOrderby(teachplan.getOrderby());
+                    teachplanMapper.updateById(res);
+                    //teachplan+1
+                    teachplan.setOrderby(teachplan.getOrderby()+1);
+                    teachplanMapper.updateById(teachplan);
+                    throw new XueChengPlusException("终止foreach");
+                }
+
+            });
+        }catch (Exception e){
+
+        }
+
+
+    }
+
+    /**
+     * 向上移动，id是课程id
+     * @param id
+     */
+    @Override
+    public void moveupTeachplan(Long id) {
+        //先通过id判断这个是父还是子
+        Teachplan teachplan = teachplanMapper.selectById(id);
+        if (teachplan.getParentid() == 0){
+            //如果是父的话找出该courseid下的所有父id
+            QueryWrapper<Teachplan> queryWrapper = new QueryWrapper<>();
+            queryWrapper.eq("parentid",0).eq("course_id",teachplan.getCourseId());
+            List<Teachplan> teachplans = teachplanMapper.selectList(queryWrapper);
+            //将两个的orberby切换一下
+            try{
+                teachplans.stream().forEach(res -> {
+                    //如果res的orderby是2，teachplan是1
+                    if (res.getOrderby() == teachplan.getOrderby()-1){
+                        //res+1
+                        res.setOrderby(teachplan.getOrderby());
+                        teachplanMapper.updateById(res);
+                        //teachplan-1
+                        teachplan.setOrderby(teachplan.getOrderby()-1);
+                        teachplanMapper.updateById(teachplan);
+                        throw new XueChengPlusException("终止foreach");
+                    }
+                });
+            }catch (Exception e){
+
+            }
+        }
+        //如果是子找出所有父id一样的id
+        QueryWrapper<Teachplan> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("parentid",teachplan.getParentid());
+        List<Teachplan> teachplans = teachplanMapper.selectList(queryWrapper);
+        //修改orderby
+        try{
+            teachplans.stream().forEach(res -> {
+                if (res.getOrderby().equals(teachplan.getOrderby()-1)){
+                    //res减1
+                    res.setOrderby(teachplan.getOrderby());
+                    teachplanMapper.updateById(res);
+                    //teachplan+1
+                    teachplan.setOrderby(teachplan.getOrderby()-1);
+                    teachplanMapper.updateById(teachplan);
+                    throw new XueChengPlusException("终止foreach");
+                }
+
+            });
+        }catch (Exception e){
+
+        }
+
+
+
+    }
+
     @Override
     public void deleteTeachplan(Long teachplanId) {
         //先判断他是大章节还是小章节,也就是对应的parentid是否为0
