@@ -26,6 +26,7 @@ import java.io.IOException;
  */
  @Api(value = "媒资文件管理接口",tags = "媒资文件管理接口")
  @RestController
+ @CrossOrigin
 public class MediaFilesController {
 
 
@@ -33,9 +34,12 @@ public class MediaFilesController {
   MediaFileService mediaFileService;
 
 
+
+
  @ApiOperation("媒资列表查询接口")
  @PostMapping("/files")
- public PageResult<MediaFiles> list(PageParams pageParams, @RequestBody QueryMediaParamsDto queryMediaParamsDto){
+ public PageResult<MediaFiles> list(PageParams pageParams,
+                                    @RequestBody QueryMediaParamsDto queryMediaParamsDto){
   Long companyId = 1232141425L;
   return mediaFileService.queryMediaFiels(companyId,pageParams,queryMediaParamsDto);
 

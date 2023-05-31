@@ -14,9 +14,7 @@ import java.util.*;
 /**
  * <p>
  * 数据字典 前端控制器
- * </p>
- *
- * @author itcast
+ * </p
  */
 
 @RestController
