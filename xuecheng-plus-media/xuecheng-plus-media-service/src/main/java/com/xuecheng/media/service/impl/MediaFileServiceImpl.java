@@ -370,7 +370,8 @@ public class MediaFileServiceImpl implements MediaFileService {
  @Override
  public UploadFileResultDto uploadFile(Long companyId,
                                        UploadFileParamsDto uploadFileParamsDto,
-                                       String localFilePath) {
+                                       String localFilePath,
+                                       String objectName) {
 
   File file = new File(localFilePath);
   if (!file.exists()) {
@@ -387,8 +388,12 @@ public class MediaFileServiceImpl implements MediaFileService {
   String fileMd5 = getFileMd5(file);
 //文件的默认目录
   String defaultFolderPath = getDefaultFolderPath();
+  //存储到minio中的对象名(带目录)
+  if(StringUtils.isEmpty(objectName)){
+   objectName =  defaultFolderPath + fileMd5 + extension;
+  }
 //存储到 minio 中的对象名(带目录)
-  String objectName = defaultFolderPath + fileMd5 + extension;
+  //String objectName = defaultFolderPath + fileMd5 + extension;
 //将文件上传到 minio
   boolean b = addMediaFilesToMinIO(localFilePath, mimeType,
           bucket_Files, objectName);
