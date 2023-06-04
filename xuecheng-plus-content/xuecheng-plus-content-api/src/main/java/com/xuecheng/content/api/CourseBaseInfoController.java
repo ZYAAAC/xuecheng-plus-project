@@ -10,8 +10,11 @@ import com.xuecheng.content.model.dto.QueryCourseParamsDto;
 import com.xuecheng.content.model.po.CourseBase;
 import com.xuecheng.content.model.po.CourseCategory;
 import com.xuecheng.content.service.CourseBaseInfoService;
+import com.xuecheng.content.util.SecurityUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -35,12 +38,14 @@ public class CourseBaseInfoController {
     CourseBaseInfoService courseBaseInfoService;
 
     @ApiOperation("课程查询接口")
+    @PreAuthorize("hasAuthority('xc_teachmanager_course_list')")//拥有课程列表查询的权限方可访问
     @PostMapping("/course/list")
-    public PageResult<CourseBase> list(PageParams pageParams,
-                                       @RequestBody(required = false) QueryCourseParamsDto queryCourseParamsDto){
-        PageResult<CourseBase> pageResult =
-                courseBaseInfoService.queryCourseBaseList(pageParams, queryCourseParamsDto);
-        return pageResult;
+    public PageResult<CourseBase> list(PageParams pageParams, @RequestBody QueryCourseParamsDto queryCourseParams){
+        //取出用户身份
+        SecurityUtil.XcUser user = SecurityUtil.getUser();
+        //机构id
+        String companyId = user.getCompanyId();
+        return courseBaseInfoService.queryCourseBaseList(Long.parseLong(companyId),pageParams,queryCourseParams);
     }
 
     @ApiOperation("新增课程基础信息")
@@ -54,6 +59,10 @@ public class CourseBaseInfoController {
     @ApiOperation("根据课程id查询课程基础信息")
     @GetMapping("/course/{courseId}")
     public CourseBaseInfoDto getCourseBaseById(@PathVariable Long courseId){
+        //取出当前用户身份
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        System.out.println(principal);
+
         return courseBaseInfoService.getCourseBaseInfo(courseId);
     }
 

@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.*;
@@ -44,12 +45,19 @@ public class GlobalExceptionHandler {
         return new RestErrorResponse(msg);
     }
 
+    @ResponseBody
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public RestErrorResponse exception(Exception e){
-        log.error("【系统异常】{}",e.getMessage(),e);
+    public RestErrorResponse exception(Exception e) {
 
+        log.error("【系统异常】{}",e.getMessage(),e);
+        e.printStackTrace();
+        if(e.getMessage().equals("不允许访问")){
+            return new RestErrorResponse("没有操作此功能的权限");
+        }
         return new RestErrorResponse(CommonError.UNKOWN_ERROR.getErrMessage());
+
+
     }
 
 
