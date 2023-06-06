@@ -122,6 +122,13 @@
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.6" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
     <orderEntry type="module" module-name="xuecheng-plus-learning-service" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:2.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.2.12.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:2.2.13.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.9.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:2.2.13.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.2.12.RELEASE" level="project" />
     <orderEntry type="module" module-name="xuecheng-plus-message-sdk" />
     <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:2.7.0" level="project" />
@@ -138,13 +145,6 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.2.12.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-amqp:2.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.2.12.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:2.2.13.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.9.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:2.2.13.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.2.12.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-freemarker:2.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.30" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.2.12.RELEASE" level="project" />
